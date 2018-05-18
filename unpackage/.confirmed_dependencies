@@ -1,0 +1,24 @@
+{
+	"home.html": {
+		"resources": [
+			"css/style.css",
+			"js/index.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"home.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"home.html",
+			"mv.html",
+			"my.html"
+		]
+	}
+}
