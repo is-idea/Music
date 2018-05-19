@@ -12,3 +12,29 @@ mui('.mui-bar-transparent').transparent({
     duration: 16,
     scrollby: document.querySelector('.mui-scroll-wrapper')
 })
+
+
+mui.plusReady(function () {
+
+var topoffset='45px';
+
+var header=document.getElementById('heardermylab');
+
+console.log(header)
+
+console.log(plus.navigator.isImmersedStatusbar())
+
+if(plus.navigator.isImmersedStatusbar()){// 兼容immersed状态栏模式
+
+// 获取状态栏高度并根据业务需求处理，这里重新计算了子窗口的偏移位置
+
+topoffset=(Math.round(plus.navigator.getStatusbarHeight())+45);
+
+header.style.height=topoffset+'px';
+
+header.style.paddingTop=(topoffset-45)+'px';
+
+}
+
+});
+

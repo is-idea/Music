@@ -3,31 +3,32 @@
 	padding: 0px;
 }
 
-.mui-bar-nav{
-	background-color:rgba(255,255,255,.7);
-}
-
 .mui-bar-nav  input{
-	/*border-radius: 100px;
-	width: 90%;
-	display: block;
-	margin: 1% auto;
-	height: 80%;*/
 	border-radius: 100px;
     width: 80%;
     display: block;
     margin: 2% 10%;
     height: 70%;
 }
+
 .mui-bar-nav .mui-icon-contact{
     position: relative;
     top: -44px;
     right: -5px;
 }
 
-/* 十宫格宽度 */
-.mui-table-view.mui-grid-view .mui-table-view-cell{
-	
+.index-my-shi ul li{
 	width: 20%;
-	margin: 10px 0px;
+}
+
+.index-my-shi ul li a div button{
+	border-radius: 100px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	height: 35px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell{
+	padding: 10px 0 0 4%;
 }

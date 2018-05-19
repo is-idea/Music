@@ -13,89 +13,114 @@
 </head>
 <body>
 	<!-- 头部导航栏 -->
-	<header class="mui-bar mui-bar-nav mui-bar-transparent">
-	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-	    <input type="text" class="mui-input-clear" placeholder="倩女幽魂 -张国荣">
-	    <a class="mui-action-back mui-icon mui-icon-contact mui-pull-right"></a>
+	<header class="mui-bar mui-bar-nav mui-bar-transparent" id="heardermylab">
+	    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+	    <!--<input type="text" class="mui-input-clear" placeholder="倩女幽魂 -张国荣">-->
+	    <!--<a class="mui-action-back mui-icon mui-icon-contact mui-pull-right"></a>-->
 	</header>
 
 	<!-- 主体内容 -->
 	<div class="mui-content">
 		<!-- 轮播图 -->
-	    <div class="mui-slider">
-		  <div class="mui-slider-group mui-slider-loop">
-		    <!--支持循环，需要重复图片节点-->
-		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527247631&di=9297e751b0e56ccdd8eaf93fa746b0f1&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019a0558be22d6a801219c77d0578a.jpg" /></a></div>
-		    <div class="mui-slider-item"><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526652967210&di=0c5fdbac823a808720da729466287228&imgtype=0&src=http%3A%2F%2Fimg10.360buyimg.com%2Fcms%2Fjfs%2Ft244%2F294%2F450058612%2F141857%2Ff9a4f55e%2F53eb8a35N21935e17.jpg" /></a></div>
-		    <div class="mui-slider-item"><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526652884262&di=3041e6af6a067c5d5ed312f5096c4c03&imgtype=0&src=http%3A%2F%2Fimg11.360buyimg.com%2Fcms%2Fjfs%2Ft241%2F304%2F441242389%2F242790%2F7a75c387%2F53eb8a39N28372033.jpg" /></a></div>
-		    <div class="mui-slider-item"><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527247631&di=9297e751b0e56ccdd8eaf93fa746b0f1&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019a0558be22d6a801219c77d0578a.jpg" /></a></div>
-		    <!--支持循环，需要重复图片节点-->
-		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526652967210&di=0c5fdbac823a808720da729466287228&imgtype=0&src=http%3A%2F%2Fimg10.360buyimg.com%2Fcms%2Fjfs%2Ft244%2F294%2F450058612%2F141857%2Ff9a4f55e%2F53eb8a35N21935e17.jpg" /></a></div>
-		  </div>
+		<div class="mui-slider">
+			<div class="mui-slider-group">
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526652967210&di=0c5fdbac823a808720da729466287228&imgtype=0&src=http%3A%2F%2Fimg10.360buyimg.com%2Fcms%2Fjfs%2Ft244%2F294%2F450058612%2F141857%2Ff9a4f55e%2F53eb8a35N21935e17.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526652884262&di=3041e6af6a067c5d5ed312f5096c4c03&imgtype=0&src=http%3A%2F%2Fimg11.360buyimg.com%2Fcms%2Fjfs%2Ft241%2F304%2F441242389%2F242790%2F7a75c387%2F53eb8a39N28372033.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527247631&di=9297e751b0e56ccdd8eaf93fa746b0f1&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019a0558be22d6a801219c77d0578a.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+			</div>
 		</div>
 		
 		<!-- 十宫格 -->
-		<div>
+		<div class="index-my-shi">
 			<ul class="mui-table-view mui-grid-view mui-grid-10">
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">华语</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">华语</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">欧美</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">欧美</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">日语</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">日语</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">粤语</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">粤语</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">小语种</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">流行</button>
+				        </div>
 				    </a>
 				</li>
 				
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">韩语</div>
+				        <div class="mui-media-body">
+				    		<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">韩语</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">古风</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">古风</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">ACG</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">ACG</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">轻音乐</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">轻音乐</button>
+				        </div>
 				    </a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3">
 				    <a href="#">
-				        <!--<span class="mui-icon mui-icon-home"></span>-->
-				        <div class="mui-media-body">流行</div>
+				        <div class="mui-media-body">
+				        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">小语种</button>
+				        </div>
 				    </a>
 				</li>
 	    	</ul>
@@ -190,5 +215,9 @@
 	</div>
 <!-- JS -->
 <script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript" src="castapp/js/castapp.js" ></script>
+<script type="application/javascript">
+	ca.init();
+</script>
 </body>
 </html>
