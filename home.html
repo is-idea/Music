@@ -7,16 +7,14 @@
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
+    
 </head>
 <body>
 	<!-- 头部导航栏 -->
-	<header class="mui-bar mui-bar-nav mui-bar-transparent" id="heardermylab">
-	    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
-	    <!--<input type="text" class="mui-input-clear" placeholder="倩女幽魂 -张国荣">-->
-	    <!--<a class="mui-action-back mui-icon mui-icon-contact mui-pull-right"></a>-->
+	<header class="mui-bar mui-bar-nav mui-bar-transparent" id="header">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <input type="text" class="mui-input-clear" placeholder="倩女幽魂 -张国荣">
+	    <a class="mui-action-back mui-icon mui-icon-contact mui-pull-right"></a>
 	</header>
 
 	<!-- 主体内容 -->
@@ -216,8 +214,17 @@
 <!-- JS -->
 <script type="text/javascript" src="js/index.js" ></script>
 <script type="text/javascript" src="castapp/js/castapp.js" ></script>
-<script type="application/javascript">
-	ca.init();
-</script>
+<script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	mui.plusReady(function(){
+      		var topffset = '45px';
+      		var header = document.getElementById('header');
+      		if(plus.navigator.isImmersedStatusbar()){
+      			topffset=(Math.round(plus.navigator.getStatusbarHeight())+45);
+      			header.style.height=topffset+'px';
+      			header.style.paddingTop=(topffset-45)+'px';
+      		}
+      	});
+    </script>
 </body>
 </html>
